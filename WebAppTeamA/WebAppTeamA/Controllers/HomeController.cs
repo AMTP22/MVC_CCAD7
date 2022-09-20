@@ -23,6 +23,16 @@ namespace WebAppTeamA.Controllers
             return View();
         }
 
+        public IActionResult Sessions()
+        {
+            return View();
+        }
+
+        public IActionResult SessionDetails()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
