@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Austi\\Desktop\\WK11\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj": {}
+    "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Austi\\Desktop\\WK11\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj": {
+    "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Austi\\Desktop\\WK11\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
+        "projectUniqueName": "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
         "projectName": "WebAppTeamA",
-        "projectPath": "C:\\Users\\Austi\\Desktop\\WK11\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
+        "projectPath": "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
         "packagesPath": "C:\\Users\\Austi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Austi\\Desktop\\WK11\\WebAppTeamA\\WebAppTeamA\\obj\\",
+        "outputPath": "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
