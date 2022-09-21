@@ -18,7 +18,6 @@ namespace WebAppTeamA.Controllers
         {
             _logger = logger;
             _fileSessionService = sessionService;
-            
 
         }
 

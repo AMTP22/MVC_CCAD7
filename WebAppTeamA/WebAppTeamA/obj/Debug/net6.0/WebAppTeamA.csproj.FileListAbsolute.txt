@@ -86,3 +86,8 @@ C:\Users\thorp\Desktop\MSSA\MSSA Programs\Week11\MVC_CCAD7\WebAppTeamA\WebAppTea
 C:\Users\thorp\Desktop\MSSA\MSSA Programs\Week11\MVC_CCAD7\WebAppTeamA\WebAppTeamA\obj\Debug\net6.0\WebAppTeamA.pdb
 C:\Users\thorp\Desktop\MSSA\MSSA Programs\Week11\MVC_CCAD7\WebAppTeamA\WebAppTeamA\obj\Debug\net6.0\WebAppTeamA.genruntimeconfig.cache
 C:\Users\thorp\Desktop\MSSA\MSSA Programs\Week11\MVC_CCAD7\WebAppTeamA\WebAppTeamA\obj\Debug\net6.0\ref\WebAppTeamA.dll
+C:\Users\AlexW\VSCodeProj\MVC\WebAppTeamA\WebAppTeamA\bin\Debug\net6.0\Data\conferences.json
+C:\Users\AlexW\VSCodeProj\MVC\WebAppTeamA\WebAppTeamA\bin\Debug\net6.0\Data\events.json
+C:\Users\AlexW\VSCodeProj\MVC\WebAppTeamA\WebAppTeamA\bin\Debug\net6.0\Json.Net.dll
+C:\Users\AlexW\VSCodeProj\MVC\WebAppTeamA\WebAppTeamA\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\AlexW\VSCodeProj\MVC\WebAppTeamA\WebAppTeamA\obj\Debug\net6.0\WebAppTeamA.csproj.CopyComplete
