@@ -1,0 +1,13 @@
+﻿
+@model List<Conference>
+@{
+    ViewData["Title"] = "Conferences";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (Conference conf in Model)
+{
+    <h3>@conf._title</h3>
+}
+
