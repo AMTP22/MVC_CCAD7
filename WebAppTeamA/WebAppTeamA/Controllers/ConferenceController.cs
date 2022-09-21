@@ -19,9 +19,14 @@ namespace WebAppTeamA.Controllers
         }
         public IActionResult Index()
         {
-            ConfData();
             List<Conference> conferences = ConfData();
             return View("Index", conferences);
+        }
+
+        public IActionResult Details(int id)
+        {
+            Conference detailConfInfo = ConfData().Where(c => c._id.Equals(id)).FirstOrDefault();
+            return View("details", detailConfInfo);
         }
     }
 }
