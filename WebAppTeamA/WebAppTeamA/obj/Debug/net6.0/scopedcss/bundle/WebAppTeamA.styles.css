@@ -1,15 +1,58 @@
 /* _content/WebAppTeamA/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-f6zn29baqy] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.checked[b-f6zn29baqy] {
+  color: orange;
 }
 
+.fa-star[b-f6zn29baqy] {
+  cursor: pointer;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.card-columns .card:hover .card-img[b-f6zn29baqy] {
+  opacity: 1;
+}
+
+.card-columns .card-body[b-f6zn29baqy] {
+    height: 100px;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+}
+
+.card-columns .card-img[b-f6zn29baqy] {
+  height: 330px;
+  vertical-align: bottom;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  opacity: .8;
+}
+
+.modal .card-img[b-f6zn29baqy] {
+  height: 500px;
+  vertical-align: bottom;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-columns .card:hover[b-f6zn29baqy] {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+
+a.navbar-brand[b-f6zn29baqy] {
+    white-space: normal;
+    font-family: 'Yellowtail', cursive;
+    font-size: xx-large;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
 a[b-f6zn29baqy] {
-  color: #0077cc;
+   color: #0366d6;
 }
 
 .btn-primary[b-f6zn29baqy] {
@@ -22,6 +65,17 @@ a[b-f6zn29baqy] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html[b-f6zn29baqy] {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html[b-f6zn29baqy] {
+    font-size: 16px;
+  }
 }
 
 .border-top[b-f6zn29baqy] {
@@ -40,10 +94,44 @@ button.accept-policy[b-f6zn29baqy] {
   line-height: inherit;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html[b-f6zn29baqy] {
+  position: relative;
+  min-height: 100%;
+}
+
+body[b-f6zn29baqy] {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+p[b-f6zn29baqy] {
+    font-family: 'Nunito', sans-serif;
+}
+h1[b-f6zn29baqy] {
+    font-family: 'Nunito', sans-serif;
+}
+ul[b-f6zn29baqy] {
+    font-family: 'Nunito', sans-serif;
+}
 .footer[b-f6zn29baqy] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    font-family: 'Nunito', sans-serif;
+}
+/*Backgrounds*/
+.bg-navbar[b-f6zn29baqy] {
+    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+}
+.bg-footer[b-f6zn29baqy] {
+    background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
 }

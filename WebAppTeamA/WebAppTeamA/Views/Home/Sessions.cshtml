@@ -1,7 +1,22 @@
-﻿@{
+﻿@*@Model MySessions*@
+@{
     ViewData["Title"] = "A-Team Conference Sessions";
 }
+
+
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your Conference Sessions.</p>
-<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails">Session Details</a>
+
+@foreach (var session in Model)
+{
+    <div class="card">
+        <div class="card-img" style="background-image: url('@session.Image');"></div>
+        <div class="card-body">
+            <h5 class="card-title">@session.Title</h5>
+            <p class="card-body">@session.Location
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails/@session.Id">Session Details</a>
+            </p>
+        </div>
+    </div>
+}
