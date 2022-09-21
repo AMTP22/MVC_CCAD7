@@ -26,7 +26,7 @@ namespace WebAppTeamA.Controllers
         public IActionResult Details(int id)
         {
             Conference detailConfInfo = ConfData().Where(c => c._id.Equals(id)).FirstOrDefault();
-            return View("details", detailConfInfo);
+            return View("Details", detailConfInfo);
         }
     }
 }
