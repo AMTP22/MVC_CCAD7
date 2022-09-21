@@ -1,16 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebAppTeamA.Models;
+using WebAppTeamA.Services;
 
 namespace WebAppTeamA.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        public JsonFileSessionService FileSessionService;
+        public IEnumerable<Session> MySessions { get; private set; }
+
+        public HomeController(ILogger<HomeController> logger,
+                                JsonFileSessionService sessionService)
         {
             _logger = logger;
+            FileSessionService = sessionService;
+
         }
 
         public IActionResult Index()
@@ -25,12 +33,15 @@ namespace WebAppTeamA.Controllers
 
         public IActionResult Sessions()
         {
-            return View();
+            
+            MySessions = FileSessionService.GetSessions();
+            return View(MySessions);
         }
 
-        public IActionResult SessionDetails()
+        public IActionResult SessionDetails(int id)
         {
-            return View();
+            MySessions = FileSessionService.GetSessions();
+            return View(MySessions);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
