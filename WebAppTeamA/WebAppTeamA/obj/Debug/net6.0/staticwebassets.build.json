@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7+C+p1zgvZkxHD0JlwiOGGBhli47MWcOF0Kf6xpKxb4=",
+  "Hash": "MQpPFKgWLKU9HzDy8tLJGsP2MWrGTIeych6mf0Su71A=",
   "Source": "WebAppTeamA",
   "BasePath": "_content/WebAppTeamA",
   "Mode": "Default",
@@ -66,40 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\wwwroot\\data\\conferences.json",
-      "SourceId": "WebAppTeamA",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\wwwroot\\",
-      "BasePath": "_content/WebAppTeamA",
-      "RelativePath": "data/conferences.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data\\conferences.json"
-    },
-    {
-      "Identity": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\wwwroot\\data\\events.json",
-      "SourceId": "WebAppTeamA",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\wwwroot\\",
-      "BasePath": "_content/WebAppTeamA",
-      "RelativePath": "data/events.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data\\events.json"
     },
     {
       "Identity": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\wwwroot\\data\\sessions.json",

@@ -1,31 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebAppTeamA.Models;
 using Newtonsoft.Json;
+using WebAppTeamA.Services;
 
 namespace WebAppTeamA.Controllers
 {
     public class ConferenceController : Controller
     {
-        public List<Conference> ConfData()
+        private JsonFileSessionService _service;
+        
+
+        public ConferenceController(JsonFileSessionService service)
         {
-            List<Conference> conferences = new List<Conference>();
-            using (StreamReader confInfo = new StreamReader("wwwroot/data/conferences.json"))
-            {
-                string rawConfData = confInfo.ReadToEnd();
-                
-                conferences = JsonConvert.DeserializeObject<List<Conference>>(rawConfData);
-            }
-            return conferences;
+            _service = service;
         }
         public IActionResult Index()
         {
-            List<Conference> conferences = ConfData();
+            List<Conference> conferences = _service.Conferences;
             return View("Index", conferences);
         }
 
         public IActionResult Details(int id)
         {
-            Conference detailConfInfo = ConfData().Where(c => c._id.Equals(id)).FirstOrDefault();
+            Conference detailConfInfo = _service.Conferences.Where(c => c._id.Equals(id)).FirstOrDefault();
             return View("details", detailConfInfo);
         }
     }
