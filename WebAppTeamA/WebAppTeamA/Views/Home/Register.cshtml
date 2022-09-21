@@ -1,8 +1,6 @@
 ﻿@{
     ViewData["Title"] = "A-Team Conference Registration";
 }
-
-
 <h1>@ViewData["Title"]</h1>
 
 <section class="h-100 h-custom" style="background-color: #8fc4b7;">
@@ -22,19 +20,7 @@
                                 <input type="text" id="form3Example1q" class="form-control" required/>
                                 <label class="form-label" for="form3Example1q">Name</label>
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-
-                                    <div class="form-outline datepicker">
-                                        <input type="date" class="form-control" id="exampleDatepicker1" />
-                                        <label for="exampleDatepicker1" class="form-label">Select a date</label>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
+                            
                             <div class="mb-4">
 
                                 <input type="email" id="form3Example1q" class="form-control" required/>
@@ -43,16 +29,15 @@
                             </div>
 
                             <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
 
-                                    <div class="form-outline">
+                                    
                                         <input type="text" id="form3Example1w" class="form-control" value="@Model.Title" />
                                         <label class="form-label" for="form3Example1w">Conference</label>
-                                    </div>
+                                    
 
                                 </div>
                             </div>
-
                             <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
 
                         </form>
