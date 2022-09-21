@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oT/MGmaJJ2ll93piSUMyUcuef3/FaFVHeHOTBTAsIYr+tLesaL8kLBe6kkioECUqJzeIjxJ3JxLT/ogLdkVLOA==",
+  "dgSpecHash": "Zh1/NAkgYHzQps2RLSUJ/3t54DB9ouRX3nAilwFaqXyT7zTWclblYVu9Sc5G5ocMZQXuGUWvKNsE8aw9PlQ1gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
+  "projectFilePath": "C:\\Users\\Austi\\Documents\\GitHub\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AlexW\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
-    "C:\\Users\\AlexW\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Austi\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
+    "C:\\Users\\Austi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
