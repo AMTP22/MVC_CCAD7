@@ -4,6 +4,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<JsonFileSessionService>(a =>
+{
+    var service = new JsonFileSessionService();
+    service.Initialize();
+    return service;
+});
 builder.Services.AddSingleton<JsonFileSessionService>(s =>
 {
     var session = new JsonFileSessionService();
@@ -18,6 +25,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+
 app.UseStaticFiles();
 
 app.UseRouting();
