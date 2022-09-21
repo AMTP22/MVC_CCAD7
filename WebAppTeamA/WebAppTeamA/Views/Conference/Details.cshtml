@@ -1,0 +1,10 @@
+﻿@model Conference
+@{
+    ViewData["Title"] = Model._title;
+}
+
+<h1>@ViewData["Title"]</h1>
+<h3>Speaker: @Model._speaker</h3>
+<h3>Location: @Model._location</h3>
+<img src="@Model._photoUrl" alt="Ya fucked up the url" />
+<h3>Track: @Model._track</h3>

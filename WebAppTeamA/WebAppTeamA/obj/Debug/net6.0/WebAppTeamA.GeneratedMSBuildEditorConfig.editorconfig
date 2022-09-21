@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\thorp\Desktop\MSSA\MSSA Programs\Week11\MVC_CCAD7\WebAppTeamA\WebAppTeamA
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/thorp/Desktop/MSSA/MSSA Programs/Week11/MVC_CCAD7/WebAppTeamA/WebAppTeamA/Views/Conference/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmVyZW5jZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/thorp/Desktop/MSSA/MSSA Programs/Week11/MVC_CCAD7/WebAppTeamA/WebAppTeamA/Views/Conference/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmVyZW5jZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
