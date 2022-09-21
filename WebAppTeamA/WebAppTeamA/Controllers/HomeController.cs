@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebAppTeamA.Models;
 using WebAppTeamA.Services;
@@ -39,8 +40,8 @@ namespace WebAppTeamA.Controllers
 
         public IActionResult SessionDetails(int id)
         {
-            
-            return View();
+            MySessions = FileSessionService.GetSessions();
+            return View(MySessions);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

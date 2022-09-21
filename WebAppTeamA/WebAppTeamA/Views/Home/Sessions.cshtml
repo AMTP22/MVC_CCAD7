@@ -1,9 +1,9 @@
-﻿@using WebAppTeamA.Controllers
+﻿@Model MySessions
 @{
     ViewData["Title"] = "Conference Sessions";
     
 }
-@Model MySessions
+
 
 <h1>@ViewData["Title"]</h1>
 
@@ -11,10 +11,13 @@
 
 @foreach (var session in Model)
 {
-    <p>
-        @session.Id
-        @session.Title
-        @session.Location
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails">Session Details</a>
-    </p>
+    <div class="card">
+        <div class="card-img" style="background-image: url('@session.Image');"></div>
+        <div class="card-body">
+            <h5 class="card-title">@session.Title</h5>
+            <p class="card-body">@session.Location
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails/@session.Id">Session Details</a>
+            </p>
+        </div>
+    </div>
 }
