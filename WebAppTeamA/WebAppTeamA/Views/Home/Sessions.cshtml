@@ -1,0 +1,20 @@
+﻿@using WebAppTeamA.Controllers
+@{
+    ViewData["Title"] = "Conference Sessions";
+    
+}
+@Model MySessions
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your Conference Sessions.</p>
+
+@foreach (var session in Model)
+{
+    <p>
+        @session.Id
+        @session.Title
+        @session.Location
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails">Session Details</a>
+    </p>
+}
