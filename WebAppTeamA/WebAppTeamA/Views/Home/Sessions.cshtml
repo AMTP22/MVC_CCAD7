@@ -1,5 +1,4 @@
-﻿@*@Model MySessions*@
-@{
+﻿@{
     ViewData["Title"] = "A-Team Conference Sessions";
 }
 
@@ -15,7 +14,7 @@
         <div class="card-body">
             <h5 class="card-title">@session.Title</h5>
             <p class="card-body">@session.Location
-                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails/@session.Id">Session Details</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SessionDetails" asp-route-id="@session.Id">Session Details</a>
             </p>
         </div>
     </div>

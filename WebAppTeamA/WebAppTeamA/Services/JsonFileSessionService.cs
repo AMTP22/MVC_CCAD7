@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
 using WebAppTeamA.Models;
 
@@ -7,44 +6,24 @@ namespace WebAppTeamA.Services
 {
     public class JsonFileSessionService
     {
-        public List<Conference> Conferences { get; set; }
-        //public JsonFileSessionService(IWebHostEnvironment webHostEnvironment)
-        //{
-        //    WebHostEnvironment = webHostEnvironment;
-        //}
+        public IEnumerable<Session> Sessions { get; set; }
 
-        //public IWebHostEnvironment WebHostEnvironment { get; }
-
-        //private string JsonFileName
-        //{
-        //    get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "sessions.json"); }
-        //}
-
-        public void ReserveSeat(int id)
+        public void InitializeSessions()
         {
-            //this.Conferences[id].Seats--;
+            Sessions = GetSessions();
         }
 
-        public void Initialize()
+        public IEnumerable<Session> GetSessions()
         {
-            Conferences = new List<Conference>();
-            using (StreamReader confInfo = new StreamReader("Data/conferences.json"))
+            using (var jsonFileReader = File.OpenText("wwwroot/data/sessions.json"))
             {
-                string rawConfData = confInfo.ReadToEnd();
-                Conferences = JsonConvert.DeserializeObject<List<Conference>>(rawConfData);
+                return JsonSerializer.Deserialize<Session[]>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
             }
         }
-
-        //public IEnumerable<Session> GetSessions()
-        //{
-        //    using (var jsonFileReader = File.OpenText(JsonFileName))
-        //    {
-        //        return System.Text.Json.JsonSerializer.Deserialize<Session[]>(jsonFileReader.ReadToEnd(),
-        //            new JsonSerializerOptions
-        //            {
-        //                PropertyNameCaseInsensitive = true
-        //            });
-        //    }
-        //}
+        
     }
 }
