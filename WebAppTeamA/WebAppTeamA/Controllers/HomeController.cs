@@ -45,9 +45,16 @@ namespace WebAppTeamA.Controllers
             return View("sessiondetails", MySession);
         }
 
-        public IActionResult Register()
+        public IActionResult Register(int id)
         {
-            return View();
+            Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Id.Equals(id));
+            return View("register",MySession);
+        }
+        [HttpPost]
+        public IActionResult Registered(string title)
+        {
+            Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Title.Equals(title));
+            return View("registered", MySession);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
