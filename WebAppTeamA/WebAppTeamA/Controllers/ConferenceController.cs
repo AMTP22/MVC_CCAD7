@@ -9,7 +9,7 @@ namespace WebAppTeamA.Controllers
         public List<Conference> ConfData()
         {
             List<Conference> conferences = new List<Conference>();
-            using (StreamReader confInfo = new StreamReader("Data/conferences.json"))
+            using (StreamReader confInfo = new StreamReader("wwwroot/data/conferences.json"))
             {
                 string rawConfData = confInfo.ReadToEnd();
                 
