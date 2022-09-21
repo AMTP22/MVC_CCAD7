@@ -24,6 +24,12 @@ namespace WebAppTeamA.Services
                     });
             }
         }
-        
+
+        public void DecreaseSeats(int id)
+        {
+            Session selected = Sessions.Where(s => s.Id == id).FirstOrDefault();
+            selected.Seats--;
+        }
+
     }
 }

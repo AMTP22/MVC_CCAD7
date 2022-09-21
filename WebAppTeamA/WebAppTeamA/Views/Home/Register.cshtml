@@ -1,8 +1,6 @@
 ﻿@{
     ViewData["Title"] = "A-Team Conference Registration";
 }
-
-
 <h1>@ViewData["Title"]</h1>
 
 <section class="h-100 h-custom" style="background-color: #8fc4b7;">
@@ -15,48 +13,34 @@
                          alt="Sample photo">
                     <div class="card-body p-4 p-md-5">
                         <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+                        @using (Html.BeginForm("Registered", "Home", new { title = @Model.Title }, FormMethod.Post,false, new { @class = "form-inline" }))
+                        {
+                            
 
-                        <form class="px-md-2">
+                                <div class="form-outline mb-4">
+                                    <input type="text" class="form-control" required/>
+                                    <label class="form-label" for="name">Name</label>
+                                </div>
 
-                            <div class="form-outline mb-4">
-                                <input type="text" id="form3Example1q" class="form-control" required/>
-                                <label class="form-label" for="form3Example1q">Name</label>
-                            </div>
+                                <div class="mb-4">
 
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-
-                                    <div class="form-outline datepicker">
-                                        <input type="date" class="form-control" id="exampleDatepicker1" />
-                                        <label for="exampleDatepicker1" class="form-label">Select a date</label>
-                                    </div>
+                                    <input type="email" class="form-control" required/>
+                                    <label class="form-label" for="email">Email</label>
 
                                 </div>
 
-                            </div>
+                                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                                    <div class="col-md-12">
 
-                            <div class="mb-4">
 
-                                <input type="email" id="form3Example1q" class="form-control" required/>
-                                <label class="form-label" for="form3Example1q">Email</label>
-
-                            </div>
-
-                            <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
-                                <div class="col-md-6">
-
-                                    <div class="form-outline">
-                                        <input type="text" id="form3Example1w" class="form-control" value="@Model.Title" />
+                                        <input type="text" id="form3Example1w" class="form-control" value="@Model.Title"/>
                                         <label class="form-label" for="form3Example1w">Conference</label>
+
+
                                     </div>
-
                                 </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
-
-                        </form>
-
+                                <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+                        }
                     </div>
                 </div>
             </div>

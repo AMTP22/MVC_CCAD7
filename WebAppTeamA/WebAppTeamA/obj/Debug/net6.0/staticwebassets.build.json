@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oeFpc8hyUrEwbZgWPIwO+BbOVdx/iB3VMXtyZncQFeU=",
+  "Hash": "1+I4ZBm7w7VCTgwNCATQVMuKwkW0uqPgY08ulgl+5jo=",
   "Source": "WebAppTeamA",
   "BasePath": "_content/WebAppTeamA",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\wwwroot\\images\\LandingPage.jpg",
+      "SourceId": "WebAppTeamA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\wwwroot\\",
+      "BasePath": "_content/WebAppTeamA",
+      "RelativePath": "images/LandingPage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\LandingPage.jpg"
     },
     {
       "Identity": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\wwwroot\\js\\site.js",
