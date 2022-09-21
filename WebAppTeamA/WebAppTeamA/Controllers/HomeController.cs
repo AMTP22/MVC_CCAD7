@@ -31,18 +31,18 @@ namespace WebAppTeamA.Controllers
             return View();
         }
 
-        public IActionResult Sessions()
-        {
+        //public IActionResult Sessions()
+        //{
             
-            MySessions = FileSessionService.GetSessions();
-            return View(MySessions);
-        }
+        //    MySessions = FileSessionService.GetSessions();
+        //    return View(MySessions);
+        //}
 
-        public IActionResult SessionDetails(int id)
-        {
-            MySessions = FileSessionService.GetSessions();
-            return View(MySessions);
-        }
+        //public IActionResult SessionDetails(int id)
+        //{
+        //    MySessions = FileSessionService.GetSessions();
+        //    return View(MySessions);
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
