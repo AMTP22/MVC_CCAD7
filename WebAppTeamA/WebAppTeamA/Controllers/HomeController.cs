@@ -50,7 +50,7 @@ namespace WebAppTeamA.Controllers
             Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Id.Equals(id));
             return View("register",MySession);
         }
-        [HttpPost]
+        
         public IActionResult Registered(string title)
         {
             Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Title.Equals(title));
