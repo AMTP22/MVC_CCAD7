@@ -13,9 +13,9 @@
                          alt="Sample photo">
                     <div class="card-body p-4 p-md-5">
                         <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
-                        @using (Html.BeginForm("Registered", "Home", FormMethod.Post, new { @class = "form-inline" }))
+                        @using (Html.BeginForm("Registered", "Home", new { title = @Model.Title }, FormMethod.Post,false, new { @class = "form-inline" }))
                         {
-                            <form class="px-md-2">
+                            
 
                                 <div class="form-outline mb-4">
                                     <input type="text" class="form-control" required/>
@@ -40,10 +40,7 @@
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
-
-                            </form>
                         }
-
                     </div>
                 </div>
             </div>

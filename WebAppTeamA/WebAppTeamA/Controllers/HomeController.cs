@@ -54,6 +54,7 @@ namespace WebAppTeamA.Controllers
         public IActionResult Registered(string title)
         {
             Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Title.Equals(title));
+            _fileSessionService.DecreaseSeats(MySession.Id);
             return View("registered", MySession);
         }
 
