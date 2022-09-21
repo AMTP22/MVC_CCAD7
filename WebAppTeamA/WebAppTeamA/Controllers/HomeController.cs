@@ -10,14 +10,15 @@ namespace WebAppTeamA.Controllers
     {
 
         private readonly ILogger<HomeController> _logger;
-        public JsonFileSessionService FileSessionService;
+        private JsonFileSessionService _fileSessionService;
         public IEnumerable<Session> MySessions { get; private set; }
 
         public HomeController(ILogger<HomeController> logger,
                                 JsonFileSessionService sessionService)
         {
             _logger = logger;
-            FileSessionService = sessionService;
+            _fileSessionService = sessionService;
+            
 
         }
 
@@ -33,15 +34,21 @@ namespace WebAppTeamA.Controllers
 
         public IActionResult Sessions()
         {
-            
-            MySessions = FileSessionService.GetSessions();
+
+            MySessions = _fileSessionService.Sessions;
             return View(MySessions);
         }
 
         public IActionResult SessionDetails(int id)
         {
-            MySessions = FileSessionService.GetSessions();
-            return View(MySessions);
+            
+            Session MySession = _fileSessionService.Sessions.FirstOrDefault(s => s.Id.Equals(id));
+            return View("sessiondetails", MySession);
+        }
+
+        public IActionResult Register()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -4,7 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<JsonFileSessionService>();
+builder.Services.AddSingleton<JsonFileSessionService>(s =>
+{
+    var session = new JsonFileSessionService();
+    session.InitializeSessions();
+    return session;
+});
 
 var app = builder.Build();
 

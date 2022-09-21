@@ -5,21 +5,17 @@ namespace WebAppTeamA.Services
 {
     public class JsonFileSessionService
     {
-        public JsonFileSessionService(IWebHostEnvironment webHostEnvironment)
-        {
-            WebHostEnvironment = webHostEnvironment;
-        }
+        public IEnumerable<Session> Sessions { get; set; }
+        
 
-        public IWebHostEnvironment WebHostEnvironment { get; }
-
-        private string JsonFileName
+        public void InitializeSessions()
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "sessions.json"); }
+            Sessions = GetSessions();
         }
 
         public IEnumerable<Session> GetSessions()
         {
-            using (var jsonFileReader = File.OpenText(JsonFileName))
+            using (var jsonFileReader = File.OpenText("wwwroot/data/sessions.json"))
             {
                 return JsonSerializer.Deserialize<Session[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
