@@ -74,24 +74,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thorp\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\AlexW\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
+      "projectUniqueName": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
       "projectName": "WebAppTeamA",
-      "projectPath": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
-      "packagesPath": "C:\\Users\\thorp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thorp\\Desktop\\MSSA\\MSSA Programs\\Week11\\MVC_CCAD7\\WebAppTeamA\\WebAppTeamA\\obj\\",
+      "projectPath": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\WebAppTeamA.csproj",
+      "packagesPath": "C:\\Users\\AlexW\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AlexW\\VSCodeProj\\MVC\\WebAppTeamA\\WebAppTeamA\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\thorp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\AlexW\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -99,7 +94,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
